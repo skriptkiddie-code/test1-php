@@ -26,34 +26,12 @@ if(isset($_POST["submit"])){
     }
     $sql="INSERT INTO details (`Full name`, `Employee_id`, `Email`, `Education_Level`, `Department`, `Position`, `DOB`, `Gender`, `Contact`) VALUES ('$fullname', '$employee_id', '$email', '$education_level', '$department', '$position', '$dob', '$gender', '$contact')";
 
-    // mysqli_query($conn,$sql);
    if(mysqli_query($conn, $sql)){
     echo "<p>Record inserted successfully!</p>";
     
    } else {
        echo "<p>Error: " . mysqli_error($conn) . "</p>";
    }
-//    //statement is prepared
-//    $stmt = $conn->prepare("SELECT * FROM details");
-
-// // Statement executed
-// $stmt->execute();
-
-// // Get result set
-// $result = $stmt->get_result();
-
-// // Fetch and display all rows
-// while ($row = $result->fetch_assoc()) {
-//     echo "Full Name: " . $row['Full Name'] . "<br>";
-//     echo "Employee ID: " . $row['Employee_Id'] . "<br>";
-//     echo "Email: " . $row['Email'] . "<br>";
-//     echo "Education Level: " . $row['Education_Level'] . "<br>";
-//     echo "Department: " . $row['Department'] . "<br>";
-//     echo "Position: " . $row['Position'] . "<br>";
-//     echo "Date of Birth: " . $row['DOB'] . "<br>";
-//     echo "Gender: " . $row['Gender'] . "<br>";
-//     echo "Contact: " . $row['Contact'] . "<br><hr>";}
-
     mysqli_close($conn);
     
     

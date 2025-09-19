@@ -8,12 +8,9 @@
 </head>
 <body>
     <form action="update.php" method="post">
-        <!-- <label for="fullname">Full Name</label><br>
-        <input type="text" name="fullname"><br> -->
+        
         <label for="employee_id">Employee ID</label><br>
         <input type="text" name="employee_id" required><br>
-         <!-- <label for="email">Email</label><br>
-        <input type="email" name="email"><BR> -->
         <label>Level of Education</label><br>
         <option value="">Select...</option>
         <select name="education_level">
@@ -40,8 +37,6 @@
 include("db_connect.php");
 if (isset($_POST['Edit'])) {
     $employee_id = mysqli_real_escape_string($conn, $_POST['employee_id']);
-    //$fullname = mysqli_real_escape_string($conn, $_POST['fullname']);
-    //$email = mysqli_real_escape_string($conn, $_POST['email']);
     $education_level = mysqli_real_escape_string($conn, $_POST['education_level']);
     $department = mysqli_real_escape_string($conn, $_POST['department']);
     $position = mysqli_real_escape_string($conn, $_POST['position']);

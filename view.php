@@ -15,7 +15,7 @@ include("db_connect.php");
  //statement is prepared
    $stmt = $conn->prepare("SELECT * FROM details");
 
-// Statement executed
+// this is the script that executes my variable stmt declared above
 $stmt->execute();
 
 // Get result set
