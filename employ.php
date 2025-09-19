@@ -51,8 +51,8 @@
          <label for="email">Email</label><br>
         <input type="email" name="email"><BR>
         <label>Level of Education</label><br>
-        <option value="">Select...</option>
         <select name="education_level" required>
+            <option value="">Select...</option>
             <option value="Diploma">Diploma</option>
             <option value="High School">High School</option>
             <option value="Master's Degree">Master's Degree</option>
