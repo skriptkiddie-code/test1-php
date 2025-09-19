@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,6 +76,6 @@
         <input type="tel" name="contact"><br>
         <input type="submit" name="submit" value="submit">
         
-      </form>
+    </form>
 </body>
 </html>
