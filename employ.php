@@ -36,7 +36,7 @@
                 color: #fff;
             }
         </style>
-</head>
+<head>
 <body>
     <div class="company-name">RUKSIDES GROUP OF COMPANIES</div>
     <h1>Employee_form</h1>
