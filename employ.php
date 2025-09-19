@@ -75,7 +75,6 @@
         <label>Contact Number</label><br>
         <input type="tel" name="contact"><br>
         <input type="submit" name="submit" value="submit">
-        
     </form>
 </body>
 </html>
